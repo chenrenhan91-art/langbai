@@ -23,7 +23,11 @@ export default function Page() {
         Site design, product copy, and photographs on this storefront belong to {company.name} unless noted. Please do not reuse them without permission.
       </p>
       <h2 className="mt-10 font-display text-3xl">Contact</h2>
-      <p className="mt-4 leading-relaxed">{company.phone}</p>
+      <p className="mt-4 leading-relaxed">
+        <a href={company.emailHref}>{company.email}</a>
+        <br />
+        {company.phone}
+      </p>
     </article>
   );
 }

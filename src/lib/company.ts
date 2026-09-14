@@ -3,6 +3,8 @@ export const company = {
   shortName: "LANGBAI",
   phone: "+852 96915334",
   phoneHref: "tel:+85296915334",
+  email: "kinopaymen@outlook.com",
+  emailHref: "mailto:kinopaymen@outlook.com",
   addressLines: [
     "RM F17, WORKSHOP 8, 11/F, WALNUT 9",
     "9 WALNUT STREET",

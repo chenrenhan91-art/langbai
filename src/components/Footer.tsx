@@ -49,6 +49,9 @@ export function Footer() {
           <h3 className="font-display text-2xl text-ink">Contact Us</h3>
           <div className="mt-6 space-y-3 text-[15px] text-ink">
             <p>
+              <a href={company.emailHref}>{company.email}</a>
+            </p>
+            <p>
               <a href={company.phoneHref}>{company.phone}</a>
             </p>
             <p>

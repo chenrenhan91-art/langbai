@@ -23,7 +23,8 @@ export default function Page() {
       </p>
       <h2 className="mt-10 font-display text-3xl">Contact</h2>
       <p className="mt-4 leading-relaxed">
-        Privacy questions: call {company.phone} or write to the workshop at {company.addressLines.join(", ")}.
+        Privacy questions: email{" "}
+        <a href={company.emailHref}>{company.email}</a>, call {company.phone}, or write to the workshop at {company.addressLines.join(", ")}.
       </p>
     </article>
   );

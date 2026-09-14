@@ -22,7 +22,8 @@ export default function Page() {
       </p>
       <h2 className="mt-10 font-display text-3xl">Questions</h2>
       <p className="mt-4 leading-relaxed">
-        If you have concerns before you order, call {company.phone}. We would rather answer first than rush a custom piece.
+        If you have concerns before you order, email{" "}
+        <a href={company.emailHref}>{company.email}</a> or call {company.phone}. We would rather answer first than rush a custom piece.
       </p>
     </article>
   );

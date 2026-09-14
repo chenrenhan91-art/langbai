@@ -13,7 +13,9 @@ export default function Page() {
       <p className="mt-4 leading-relaxed">
         Lead time is {company.leadTime}. If anything shifts, we contact you before the date changes.
       </p>
-      <p className="mt-4 leading-relaxed">Need a status check? Call {company.phone}.</p>
+      <p className="mt-4 leading-relaxed">
+        Need a status check? Email <a href={company.emailHref}>{company.email}</a> or call {company.phone}.
+      </p>
     </article>
   );
 }
