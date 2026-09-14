@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --color-rose: #b38881;
+  --color-rose-deep: #a06a61;
+  --color-rose-soft: #cfa6a0;
+  --color-ink: #785a4f;
+  --color-ink-deep: #59433b;
+  --color-cream: #fdf8f5;
+  --color-blush: #fff4eb;
+  --color-peach: #ffd8b8;
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fdf8f5;
+  color: #785a4f;
+  font-family: var(--font-body), "Iowan Old Style", Baskerville, "Times New Roman", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-display {
+  font-family: var(--font-display), Baskervville, serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+::selection {
+  background: #cfa6a0;
+  color: #fff4eb;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  border-radius: 0;
+}
+
+.marquee-track {
+  animation: marquee 28s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
