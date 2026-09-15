@@ -12,8 +12,8 @@ function customDomainFromCname() {
   return process.env.CUSTOM_DOMAIN === "true";
 }
 
-// Project Pages live at /langbai. A non-empty public/CNAME means a custom
-// domain will serve the site at "/", so the prefix is dropped on rebuild.
+// Custom domains (public/CNAME) are served at "/". The github.io/langbai
+// project path is only used when no CNAME is present.
 const useProjectPath =
   process.env.GITHUB_PAGES === "true" && !customDomainFromCname();
 const basePath = useProjectPath ? "/langbai" : "";
