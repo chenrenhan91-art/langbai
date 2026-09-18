@@ -7,7 +7,7 @@ export const company = {
   email: "support@langbaionline.com",
   emailHref: "mailto:support@langbaionline.com",
   /** Inbox that actually receives contact-form submissions. */
-  receiveEmail: "kinopayment@outlook.com",
+  receiveEmail: "goldenflying@vanxpay.com",
   addressLines: [
     "RM F17, WORKSHOP 8, 11/F, WALNUT 9",
     "9 WALNUT STREET",
